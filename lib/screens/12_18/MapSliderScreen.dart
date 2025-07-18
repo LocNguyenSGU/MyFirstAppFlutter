@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app_flutter/screens/12_18/map_4_lock.dart';
 import 'map_1.dart';
 import 'map_2_lock.dart';
+import 'map_3_lock.dart';
+import 'map_5_lock.dart';
 
 class MapSliderScreen extends StatefulWidget {
   const MapSliderScreen({super.key});
@@ -15,9 +18,9 @@ class _MapSliderScreenState extends State<MapSliderScreen> {
   final List<Widget> pages = [
     const Map1(),
     const Map2Lock(),
-    // const Map3Lock(),
-    // const Map4(),
-    // const Map5(),
+    const Map3Lock(),
+    const Map4Lock(),
+    const Map5Lock(),
   ];
 
   @override
@@ -37,12 +40,17 @@ class _MapSliderScreenState extends State<MapSliderScreen> {
             },
             child: Row(
               children: const [
-                Icon(Icons.arrow_back_ios_new, size: 20),
+                Icon(
+                  Icons.arrow_back_ios_new,
+                  size: 25,
+                  color: Colors.black, // chỉnh màu đen ở đây
+                ),
                 SizedBox(width: 4),
                 Text(
                   'Quay lại',
                   style: TextStyle(
                     fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w700,
                   ),
                 ),

@@ -68,6 +68,17 @@ flutter:
     - assets/12_18/map_2_lock.png
     - assets/12_18/bg_map_2.png
     - assets/12_18/lock_map.png
+    - assets/12_18/map_3_lock.png
+    - assets/12_18/bg_map_3.png
+    - assets/12_18/map_4_lock.png
+    - assets/12_18/bg_map_4.png
+    - assets/12_18/map_5_lock.png
+    - assets/12_18/bg_map_5.png
+    - assets/12_18/map_1/ic_leaf.png
+    - assets/12_18/map_1/bg_task_1.png
+    - assets/12_18/map_1/bg_task_2.png
+    - assets/12_18/map_1/bg_task_3.png
+    - assets/12_18/map_1/bg_task_4.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

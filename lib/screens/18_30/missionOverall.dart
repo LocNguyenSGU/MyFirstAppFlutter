@@ -20,12 +20,17 @@ class MissionOverall extends StatelessWidget {
             },
             child: Row(
               children: const [
-                Icon(Icons.arrow_back_ios_new, size: 20),
+                Icon(
+                  Icons.arrow_back_ios_new,
+                  size: 25,
+                  color: Colors.black, // chỉnh màu đen ở đây
+                ),
                 SizedBox(width: 4),
                 Text(
                   'Quay lại',
                   style: TextStyle(
                     fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w700,
                   ),
                 ),

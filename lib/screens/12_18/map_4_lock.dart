@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_first_app_flutter/screens/12_18/Map_1/ListTaskMap_1.dart';
 
-class Map1 extends StatelessWidget {
-  const Map1({super.key});
+class Map4Lock extends StatelessWidget {
+  const Map4Lock({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +69,7 @@ class Map1 extends StatelessWidget {
             // Background image covering the entire screen
             Positioned.fill(
               child: Image.asset(
-                'assets/12_18/bg_map_1.png',
+                'assets/12_18/bg_map_4.png',
                 fit: BoxFit.cover,
                 alignment: Alignment.topCenter,
               ),
@@ -89,14 +88,14 @@ class Map1 extends StatelessWidget {
                       alignment: Alignment.center,
                       children: [
                         Image.asset(
-                          'assets/12_18/map_1.png',
+                          'assets/12_18/map_4_lock.png',
                           width: 280,
                           height: 270,
                         ),
                         Transform.translate(
                           offset: const Offset(0, 94),
                           child: Image.asset(
-                            'assets/12_18/3_stars_fail.png',
+                            'assets/12_18/lock_map.png',
                             width: 161,
                             height: 97,
                           ),
@@ -110,7 +109,7 @@ class Map1 extends StatelessWidget {
                         children: [
                           // Viền chữ
                           Text(
-                            'Mê cung nhận diện?',
+                            'Đảo kỹ năng',
                             style: GoogleFonts.baloo2(
                               fontSize: 48,
                               fontWeight: FontWeight.w900,
@@ -125,11 +124,11 @@ class Map1 extends StatelessWidget {
                           // Chữ có gradient
                           ShaderMask(
                             shaderCallback: (bounds) => const LinearGradient(
-                              colors: [Color(0xFF88E744), Color(0xFFFFF176)],
+                              colors: [Color(0xFF00CFFF), Color(0xFFD0F0FF)],
                             ).createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
                             blendMode: BlendMode.srcIn,
                             child: Text(
-                              'Mê cung nhận diện?',
+                              'Đảo kỹ năng',
                               style: GoogleFonts.baloo2(
                                 fontSize: 48,
                                 fontWeight: FontWeight.w900,
@@ -141,36 +140,33 @@ class Map1 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(height: 80),
-                    Container(
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFF3AD42E), Color(0xFF269E38)],
-                        ),
-                        borderRadius: BorderRadius.circular(37),
-                      ),
-                      child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const ListTaskMap1()),
-                          );
-                        },
-                        icon: const Icon(Icons.search, color: Colors.white, size: 34),
-                        label: Text(
-                          'Khám phá',
-                          style: GoogleFonts.baloo2(
-                            fontSize: 27,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                          ),
-                        ),
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                        ),
-                      ),
-                    ),
+                    // const SizedBox(height: 80),
+                    // Container(
+                    //   decoration: BoxDecoration(
+                    //     gradient: const LinearGradient(
+                    //       colors: [Color(0xFF3AD42E), Color(0xFF269E38)],
+                    //     ),
+                    //     borderRadius: BorderRadius.circular(37),
+                    //   ),
+                    //   child: TextButton.icon(
+                    //     onPressed: () {
+                    //       // TODO: Hành động khi nhấn nút
+                    //     },
+                    //     icon: const Icon(Icons.search, color: Colors.white, size: 34),
+                    //     label: Text(
+                    //       'Khám phá map2',
+                    //       style: GoogleFonts.baloo2(
+                    //         fontSize: 27,
+                    //         fontWeight: FontWeight.w900,
+                    //         color: Colors.white,
+                    //       ),
+                    //     ),
+                    //     style: TextButton.styleFrom(
+                    //       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    //       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    //     ),
+                    //   ),
+                    // ),
 
                   ],
                 ),

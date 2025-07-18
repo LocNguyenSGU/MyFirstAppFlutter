@@ -135,23 +135,6 @@ class _AgeSelectionScreenState extends State<AgeSelectionScreen> {
           margin: const EdgeInsets.only(top: 10),
           child: AppBar(
             backgroundColor: const Color(0xFF0F9E38),
-            foregroundColor: Colors.white,
-            title: Row(
-              children: [
-                Image.asset(
-                  'assets/logo.png',
-                  height: 78,
-                ),
-                const SizedBox(width: 8),
-                const Text(
-                  'Lá Chắn Xanh',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ],
-            ),
             actions: [
               Container(
                 margin: const EdgeInsets.only(right: 10),
